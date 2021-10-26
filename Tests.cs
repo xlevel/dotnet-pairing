@@ -14,15 +14,15 @@ namespace dotNet_pairing
         public void Name_This_Test()
         {
             // Example initial data
-            var map = new [] { new [] {"*", ".", ".", "."}, new [] {".", ".", "*", "."}, new [] {".", ".", ".", "."}};
-            var resultMap = new [] {new [] {"*", "2", "1", "1"}, new [] {"1", "2", "*", "1"}, new [] {"0", "1", "1", "1"}};
+            var testInput = new [] { new [] {"*", ".", ".", "."}, new [] {".", ".", "*", "."}, new [] {".", ".", ".", "."}};
+            var expectedOutput = new [] {new [] {"*", "2", "1", "1"}, new [] {"1", "2", "*", "1"}, new [] {"0", "1", "1", "1"}};
 
             var map = new Map();
             
-            var result = map.CreateMap(map);
+            var result = map.CreateMap(testInput);
             
             // Example Assert
-            Assert.That(result.Length, Is.EqualTo(resultMap.Length));
+            Assert.That(result.Length, Is.EqualTo(expectedOutput.Length));
         }
     }
 }
