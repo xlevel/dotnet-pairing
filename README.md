@@ -23,3 +23,5 @@ Example:
 12*1
 0111
 ```
+
+## N.B.. Project nunit reference currently refers to NUnit v3.4.1
